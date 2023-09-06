@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="#4743BC"
+        android:text="News App"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/rektor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Rektor UGM Pastikan Meski 'Tak Wajib Skripsi' Mutu Pendidikan Tidak Turun"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/isiBerita"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Bahwa dalam suatu pendidikan tinggi harus ada karya akhir, karya akhir itu bisa dalam bentuk apa saja, salah satunya adalah skripsi. Bisa juga dalam bentuk 'report', 'project',&quot; kata dia.   Dia mencontohkan, mahasiswa yang berkuliah di jurusan seni tentu lebih relevan manakala tugas akhirnya diwujudkan dalam bentuk karya seni ketimbang berjibaku membuat skripsi tertulis dengan menghimpun literatur di perpustakaan.   &quot;Kalau dia belajar seni, masak skripsi? Kan bisa saja membuat sebuah gubahan atau mungkin suatu patung sebagai karya jadi artinya karya akhir dari suatu jenjang pendidikan,&quot; tutur Ova.   Meski demikian, menurut Ova, UGM masih akan melakukan kajian internal terkait implementasi dari aturan baru Mendikbudristek Nadiem Makarim yang tidak lagi mewajibkan skripsi sebagai syarat kelulusan mahasiswa S1 dan D4.  &quot;Ini kan transisinya ada dua tahun. Keputusannya adalah keputusan di senat akademik yang tentunya akan didiskusikan. Jadi saya kira kita akan kaji hal tersebut dan diputuskan dalam forum senat akademik,&quot; ujar dia. Guru Besar Bidang Ilmu Pendidikan Kedokteran itu juga berharap masyarakat luas tidak salah mengartikan aturan baru Mendikbudristek itu dengan menganggap bahwa di perguruan tinggi tidak ada lagi skripsi.   &quot;Bukan begitu maksudnya, jadi artinya itu diberi kebebasan dari universitas ataupun program studi untuk menerjemahkan (tugas akhir) sesuai dengan kompetensi dari prodi tersebut,&quot; kata dia.   Sementara itu, Wakil Rektor Bidang Kemahasiswaan, Pengabdian Masyarakat, dan Alumni UGM Arie Sujito menilai ide Mendikbudristek Nadiem Makarim bukan hal baru mengingat beberapa program studi di UGM sudah menerapkan dengan istilah &quot;skripsi karya&quot; atau tugas akhir bukan dalam bentuk tertulis.   &quot;Iya (prodi) di Fisipol UGM, sudah memberi beberapa alternatif namanya skripsi karya. Dia bisa membuat semacam film,&quot; ujar Arie.   Menurut Arie, opsi kuliah tanpa skripsi masuk akal sebab tidak semua sarjana bercita-cita menjadi dosen sehingga untuk mengukur tugas akhir mereka tidak sepenuhnya harus menggunakan skripsi.   Terpenting, kata dia, adalah visi dari program studi dalam memberikan orientasi terhadap masing-masing calon sarjana.   &quot;Kalau pilihan itu diberikan pada calon sarjana dengan orientasi mau jadi ilmuwan, mau jadi praktisi atau mau jadi birokrat atau apa itu (opsi tanpa skripsi) harus tersedia,&quot; kata dia.   Senada dengan Ova, dia memastikan jajaran Pimpinan UGM bersama senat akademik segera membahas aturan baru itu dengan menggunakan pendekatan partisipatif dari program studi dan fakultas.   &quot;Ini segera direspons dan tentu mahasiswa juga perlu dilibatkan agar mereka mendefinisikan dirinya ini yang dibutuhkan yang seperti apa,&quot; ujar Arie.   Sebelumnya, Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi (Mendikbudristek) Nadiem Anwar Makarim membuat aturan baru terkait syarat lulus kuliah pada jenjang S1 dan D4.  Nadiem menyatakan syarat kelulusan mahasiswa S1 dan D4 tidak wajib membuat skripsi, ada banyak pilihan tugas akhir yang dapat diambil mahasiswa."
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline"
+                app:layout_constraintGuide_percent="0.5"
+                android:orientation="vertical"/>
+            <Button
+                android:id="@+id/buttonPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
